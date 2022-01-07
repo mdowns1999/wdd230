@@ -1,0 +1,62 @@
+.picture-box{
+    background-color:lightblue;
+    color: white;
+    padding: 1.5rem;
+    border: 1px solid grey;
+    border-radius: 20px;
+    text-shadow: 2px 2px 4px #000000;
+    box-shadow: 5px 5px 5px rgb(187, 187, 187) inset;
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    justify-items:center;
+}
+
+.legel-section{
+    background-color:lightblue;
+    color: white;
+    padding: 1.5rem;
+    border: 1px solid grey;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgb(187, 187, 187) inset;
+    font-size: 20px;
+}
+
+
+header, main, footer {
+    max-width: 600px;
+    margin: 1rem auto;
+}
+
+main{
+    padding: 5px;
+    font-family: sans-serif;
+    font-size: 20px;
+    border: 1px grey;
+    border-bottom-style: solid;
+}
+
+.heading{
+    font-weight: bold;
+    text-shadow: 2px 2px 4px grey;
+    border: 1px grey;
+    border-bottom-style: solid;
+}
+
+img {
+    width:150px;
+    justify-items:right;
+}
+
+.name{
+    text-align: center;
+    padding:50px;
+}
+
+a:hover {
+    color: yellowgreen;
+  }
+
+  #current_date {
+      color: yellow;
+  }

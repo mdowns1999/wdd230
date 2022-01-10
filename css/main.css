@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 .picture-box{
     background-color:lightblue;
     color: white;
@@ -30,7 +32,7 @@ header, main, footer {
 
 main{
     padding: 5px;
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     border: 1px grey;
     border-bottom-style: solid;

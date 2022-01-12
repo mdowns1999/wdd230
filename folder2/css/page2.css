@@ -1,0 +1,50 @@
+/*Google Font*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+header, main, footer {
+    max-width: 900px;
+    margin: 1rem auto;
+    
+}
+
+
+header, footer{
+    background-color:black;
+    color:white;
+    padding:20px;
+    text-align: center;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p, .title-1,.title-2,.title-3, a, h3{
+    padding:10px;
+}
+
+
+.section-1, .section-2, .section-3 {
+    background-color: rgb(228, 226, 226);
+    border:1px solid grey;
+    border-radius: 15px;
+}
+
+
+h3 {
+    background-color: rgb(144, 144, 248);
+    margin: 0px auto;
+    border-radius: 15px;
+}
+
+a:hover {
+    color: yellowgreen;
+  }
+
+/* GRID SECTION */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}

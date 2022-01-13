@@ -8,7 +8,9 @@ header, main, footer {
     
 }
 img {
-    margin:10px;
+    display:block;
+    margin:0 auto;
+    width:90%;
 }
 
 header, footer{
@@ -35,10 +37,16 @@ p, .title-1,.title-2,.title-3, a, h3{
 }
 
 
+
 h3 {
     background-color: rgb(248, 191, 144);
     margin: 0px auto;
     border-radius: 15px 15px 0px 0px;
+}
+
+a {
+    display:block;
+    margin: 10px;
 }
 
 a:hover {
@@ -58,11 +66,16 @@ main {
     main{
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
+    justify-items: center;
     }
 
-    /* .section-3 {
-        grid-column: span 2;
-    } */
+    .section-1, .section-2, .section-3 {
+        max-width: 400px;
+    }
+
+    .section-3 {
+        grid-column:1/-1;
+    }
 }
 
 /* Display on Laptop Screen */
@@ -70,5 +83,9 @@ main {
     main{
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
+    }
+
+    .section-3 {
+        grid-column:span 1;
     }
 }

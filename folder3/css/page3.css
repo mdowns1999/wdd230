@@ -98,6 +98,7 @@ h2{
 
 .primary_color{
 	background-color:#4070A0;
+	/* background-color: #23395b; */
 	padding:20px;
 }
 
@@ -108,6 +109,11 @@ h2{
 
 .accent_1 {
 	background: #FFFFFF;
+	padding:20px;
+}
+
+.accent_2 {
+	background-color:#8ea8c3;
 	padding:20px;
 }
 

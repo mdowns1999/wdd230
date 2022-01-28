@@ -1,0 +1,37 @@
+.newstyle {
+    background-color: red;
+    /* display:none; */
+}
+
+ul {
+    list-style: none;
+    display:flex;
+    flex-direction: column;
+    
+}
+
+li {
+    display:none;
+    padding:20px;
+}
+
+.ham {
+    display:block;
+}
+
+.responsive li{
+    display:block;
+}
+
+@media screen and (min-width: 600px) {
+    li{
+        display:block;
+    }
+    .ham {
+        display:none;
+    }
+
+    ul{
+        flex-direction: row;
+    }
+}

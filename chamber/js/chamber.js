@@ -22,7 +22,7 @@ hamburgerBtn.addEventListener('click', () => {navigation.classList.toggle('respo
 
 // FULL DATE
 
-const date_area = document.querySelector('date')
+const date_area = document.querySelector('section')
 
 // We have the current date from up above.
 const date_now = new Date();

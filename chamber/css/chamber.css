@@ -141,6 +141,8 @@ main{
 }
 /*Footer CSS */
 footer{
+    display: grid;
+    grid-template-columns: 1fr;
     background-color: #4070A0;
     text-align:center;
     padding:20px;
@@ -241,5 +243,19 @@ footer{
 
     .current_date{
         display:block;
+    }
+
+    footer {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .logo_footer {
+        width: 75px;
+        grid-template-columns: 1/2;
+        justify-self: center;
+    }
+
+    .legal_section {
+        grid-template-columns: 2/3;
     }
 }

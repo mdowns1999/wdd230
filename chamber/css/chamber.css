@@ -126,8 +126,21 @@ main{
     grid-row: 2/3;
 }
 
+.event_icon {
+    width: 150px;
+}
+
+
+.event_box .event_list {
+    display:block;
+}
+
 .weather_box{
     grid-row:3/4;
+}
+
+.weather_icon {
+    width: 200px;
 }
 
 .news_box {
@@ -136,6 +149,21 @@ main{
 
 .spotlight_box {
     grid-row:5/7;
+}
+.join_box {
+    text-align: center;
+}
+
+.join_button:hover {
+    background-color: white;
+    color:black;
+}
+
+.join_button {
+    background-color:#8ea8c3;
+    padding:20px;
+    width:100%;
+    border-radius: 30px;
 }
 
 /*Footer CSS */
@@ -299,7 +327,7 @@ footer{
     }
 
     footer {
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr 1fr;
     }
 
     .logo_footer {
@@ -310,7 +338,7 @@ footer{
 
     .legal_section {
         grid-column: 2/3;
-        justify-self: left;
+        align-self: center;
     }
 
     .map{

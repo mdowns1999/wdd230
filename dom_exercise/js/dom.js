@@ -44,12 +44,14 @@ button.addEventListener('click', function(){
     const list_button = document.createElement('button')
     const list_text = document.createElement('span')
 
+    /*This  will add the user's inputs into list*/
     list_item.appendChild(list_text)
     list_text.textContent = input_value;
     list_item.appendChild(list_button)
     list_button.textContent = "❌";
     list.appendChild(list_item);
 
+    /*This function will delete the user's item*/
     list_button.addEventListener('click', function() {
         list.removeChild(list_item);
     })

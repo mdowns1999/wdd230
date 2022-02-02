@@ -30,58 +30,6 @@
 
 // _____________________________SHOPPING EXAMPLE
 
-// const list = document.querySelector('ul');
-// const input = document.querySelector('input');
-// const button = document.querySelector('button');
-
-// button.onclick = function () {
-//     let item = input.value;
-//     input.value=''
-
-//     const listItem = document.createElement('li');
-//     const listText = document.createElement('span');
-//     const listButton = document.createElement('button');
-
-
-//         listItem.appendChild(listText);
-//         listText.textContent = item;
-//         listItem.appendChild(listButton);
-//         listBtn.textContent = 'Delete';
-//         list.appendChild(listItem);
-
-//         listBtn.onclick = function(e) {
-//         list.removeChild(listItem);
-//         }
-
-//         input.focus();
-
-// }
-
-// const list = document.querySelector('ul');
-//       const input = document.querySelector('input');
-//       const button = document.querySelector('button');
-
-//       button.onclick = function() {
-//         let myItem = input.value;
-//         input.value = '';
-
-//         const listItem = document.createElement('li');
-//         const listText = document.createElement('span');
-//         const listBtn = document.createElement('button');
-
-//         listItem.appendChild(listText);
-//         listText.textContent = myItem;
-//         listItem.appendChild(listBtn);
-//         listBtn.textContent = 'Delete';
-//         list.appendChild(listItem);
-
-//         listBtn.onclick = function(e) {
-//           list.removeChild(listItem);
-//         }
-
-//         input.focus();
-//       }
-
 
 const list = document.querySelector('.list');
 const input = document.querySelector('input');
@@ -89,21 +37,21 @@ const button = document.querySelector('button');
 
 button.addEventListener('click', function(){
 
-    let myItem = input.value;
+    let input_value = input.value;
     input.value="";
 
-    const listItem = document.createElement('li');
-    const listButton = document.createElement('button')
-    const listText = document.createElement('span')
+    const list_item = document.createElement('li');
+    const list_button = document.createElement('button')
+    const list_text = document.createElement('span')
 
-    listItem.appendChild(listText)
-    listText.textContent = myItem;
-    listItem.appendChild(listButton)
-    listButton.textContent = "❌";
-    list.appendChild(listItem);
+    list_item.appendChild(list_text)
+    list_text.textContent = input_value;
+    list_item.appendChild(list_button)
+    list_button.textContent = "❌";
+    list.appendChild(list_item);
 
-    listButton.addEventListener('click', function() {
-        list.removeChild(listItem);
+    list_button.addEventListener('click', function() {
+        list.removeChild(list_item);
     })
     input.focus();
 }

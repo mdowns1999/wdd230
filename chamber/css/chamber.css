@@ -222,6 +222,11 @@ main{
     border-radius: 30px;
 }
 
+.button {
+    text-decoration: none;
+    color:black;
+}
+
 .join_pic {
     width:325px;
 }
@@ -243,7 +248,7 @@ footer{
     justify-self: center;
 }
 
-a{
+.address{
     color:white;
     text-decoration: none;
 }

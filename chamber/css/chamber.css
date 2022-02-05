@@ -124,7 +124,7 @@ main{
 .event_box, .hero_box, .spotlight_box,.weather_box, .join_box, .news_box, .contact_box{
     border: 1px solid grey;
     background-color: #B8B8B8;
-    padding:20px;
+    padding:25px;
     text-align: center;
 }
 

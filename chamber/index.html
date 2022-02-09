@@ -16,7 +16,7 @@
 <body>
     <h3 class="announce"></h3>
     <header>
-        <img class="logo" src="images/chamber_logo.png" alt="Logo">
+        <img class="logo" src="images/chamber_logo_changed.webp" alt="Logo">
 
         <nav>
             <ul class="navigation">
@@ -40,7 +40,7 @@
         <section class="event_box">
             <img class="event_icon" src="images/resized_icons/rsz_1calendar.png" alt="Events Icon">
             <h3>Events</h3>
-            <p>Follow events we do in the community!</p>
+            <!-- <p>Follow events we do in the community!</p> -->
             <ul class="event_list">
                 <li>-Chile Cook-Off: March 15, 2022</li>
                 <li>-Celebrate Youth: July 25th, 2022</li>
@@ -50,7 +50,13 @@
         </section>
 
         <section class="hero_box">
-            <img class="hero_photo" src="images/rexburg.jpg" alt="City of Rexburg Picture">
+            <!-- <img class="hero_photo" src="images/rexburg.jpg" alt="City of Rexburg Picture"> -->
+
+            <picture>
+                <source srcset="images/hero_img/large_wdd230-org.jpg" media="(min-width:799px) and (max-width: 1199px)">
+                <source srcset="images/hero_img/medium_wdd230-org.jpg" media="(min-width:1200px) and (max-width: 2400px)">
+                <img class="hero_photo" src="images/hero_img/small_wdd230-org.jpg" alt="City of Rexburg Picture">
+            </picture>
             <h1 class="hero_title ">Welcome to Rexburg!</h1>
             <a class= "hero_button"  href='#'>Contact Us</a>
         </section>
@@ -79,8 +85,11 @@
 
         <section class="weather_box">
             <h3>Weather</h3>
+            <div class="weather_display">
             <img class="weather_icon" src="images/resized_icons/rsz_sunny.png" alt="Weather Icon">
-            <h3>65 Degrees</h3>
+            <h3 id="tempature"></h3> </div>
+            <p id="wind_speed"></p>
+            <p id="wind_chill"></p>
         </section>
 
         <section class="news_box">
@@ -111,10 +120,10 @@
     </main>
 
     <footer>
-        <img class="logo_footer" src="images/chamber_logo.png" alt="Logo">
+        <img class="logo_footer" src="images/chamber_logo_changed.webp" alt="Logo">
 
         <p class='legel-section'>
-            &copy;<span id="year"></span> Rexburg Chamber | Mike Downs | WDD 230 Project <span id='current_date'></span>
+            &copy;<span id="year"></span> Rexburg Chamber | Mike Downs | WDD 230 Project | <span id='current_date'></span>
 
         </p>
         <a class = "address" href="https://goo.gl/maps/tPYNnkvYH77Nfko79">
@@ -123,6 +132,7 @@
     </footer>
 
     <script src="js/chamber.js"></script>
+    <script src="js/windchill.js"></script>
 </body>
 
 </html>

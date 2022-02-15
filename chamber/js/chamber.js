@@ -37,7 +37,7 @@ date_area.innerHTML = `<em>${full_date}</em>`
 const day = date_now.getDay();
 // Sunday - Saturday : 0 - 6
 
-console.log(day);
+
 // expected output: 2
 
 function show_banner(announcement) {
@@ -49,3 +49,54 @@ if (day === 1 || day === 2) {
     const announcement = document.querySelector('.announce')
     show_banner(announcement)
 }
+
+// -----------------LAZY LOADING IMAGES CODE-------------------
+let imagesToLoad = document.querySelectorAll('img[data-src]');
+const loadImages = (image) => {
+    // Change the data-src to the src
+    image.setAttribute('src', image.getAttribute('data-src'));
+    image.onload = () => {
+        // Remove data-src
+        image.removeAttribute('data-src')
+    }
+}
+
+if('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((items, observer) => {
+        items.forEach((item) => {
+            // IF THE USER"S WINDOW IS ON TH EIMAGE
+            if(item.isIntersecting) {
+                //LOAD IMAGE
+                loadImages(item.target);
+                //IF USER IS NOT ON IMAGE< DON"T SHOW IT
+                observer.unobserve(item.target);
+            }
+        });
+    });
+    //LOAD EACH IMAGE
+    imagesToLoad.forEach((img) => {
+        loadImages(img);
+    });
+}
+//------------------------------------------
+
+
+
+//GET KEY AND CONVERT VALUE TO NUMBER
+let numVisits = Number(window.localStorage.getItem("num_visits"));
+let visit_heading = document.querySelector('.visited')
+
+console.log(numVisits)
+
+if (numVisits != 0){
+    visit_heading.textContent = numVisits;
+}
+else{
+    visit_heading.textContent = 'This is your first visit!  Welcome!';
+}
+
+//Increment by 1 after each visit
+numVisits++
+
+//Store new variable
+localStorage.setItem('num_visits', numVisits);

@@ -10,11 +10,11 @@ body {
 }
 
 /* THIS CSS WILL ADD BLURRING EFFECT TO IMAGE THEN GET RID OF IT */
-picture img[data-src] {
+/* picture img[data-src] {
     filter: blur(0.5em)
   }
   
   picture img {
     filter: blur(0em);
     transition: filter 2.0s;
-  }
+  } */

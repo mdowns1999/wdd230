@@ -437,14 +437,12 @@ footer{
     grid-row:4/5;
 }
 
-picture img[data-src] {
+/* picture img[data-src] {
     filter: blur(0.5em)
-  }
+  } */
   
   picture img {
-    filter: blur(0em);
-    transition: filter 2.0s;
-    opacity: .8;
+    opacity: .7;
   }
 
   picture img:hover {

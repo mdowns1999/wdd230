@@ -51,33 +51,41 @@ if (day === 1 || day === 2) {
 }
 
 // -----------------LAZY LOADING IMAGES CODE-------------------
-let imagesToLoad = document.querySelectorAll('img[data-src]');
-const loadImages = (image) => {
-    // Change the data-src to the src
-    image.setAttribute('src', image.getAttribute('data-src'));
-    image.onload = () => {
-        // Remove data-src
-        image.removeAttribute('data-src')
-    }
+const images = document.querySelectorAll('.picture');
+
+// OPTIONS TO AFFECT IMAGE
+const options = {
+    threshold: [.1]
 }
 
-if('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver((items, observer) => {
-        items.forEach((item) => {
-            // IF THE USER"S WINDOW IS ON TH EIMAGE
-            if(item.isIntersecting) {
-                //LOAD IMAGE
-                loadImages(item.target);
-                //IF USER IS NOT ON IMAGE< DON"T SHOW IT
-                observer.unobserve(item.target);
-            }
-        });
-    });
-    //LOAD EACH IMAGE
-    imagesToLoad.forEach((img) => {
-        loadImages(img);
-    });
+function preloadImage(img) {
+    const source = img.getAttribute('data-src');
+
+    img.src = source;
 }
+
+const io = new IntersectionObserver(
+    (entries, io) =>{
+
+        entries.forEach(entry => {
+            // console.log(entries);
+            if(!entry.isIntersecting){
+                return;
+            } else{
+                //Call a function on th eimage it is currently seeing
+                preloadImage(entry.target)
+                io.unobserve(entry.target) // Stop observing it
+            }
+        })
+    },
+    options
+)
+
+//SEE ALL IMAGES
+images.forEach(image => {
+    io.observe(image);
+})
+
 //------------------------------------------
 
 

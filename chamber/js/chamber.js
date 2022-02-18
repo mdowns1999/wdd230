@@ -11,7 +11,7 @@ document.querySelector("#year").innerHTML = year;
 
 let currentdate = document.lastModified;
 document.getElementById('current_date').textContent = `Last Updated ${currentdate}`;
-console.log(currentdate)
+// console.log(currentdate)
 
 // HAM TOGGLE
 
@@ -87,24 +87,32 @@ images.forEach(image => {
 })
 
 //------------------------------------------
+// A function that will calculate th edifference of days
+function calc_diff_days(date1, date2){
+    let diff_milliseconds = date2.getTime() - date1.getTime()
 
+    let difference_days = Math.floor(diff_milliseconds / (1000 * 3600 * 24))
 
-
+    return difference_days
+};
 //GET KEY AND CONVERT VALUE TO NUMBER
-let numVisits = Number(window.localStorage.getItem("num_visits"));
 let visit_heading = document.querySelector('.visited')
 
-console.log(numVisits)
 
-if (numVisits != 0){
-    visit_heading.textContent = numVisits;
-}
-else{
+if (!localStorage.getItem('last_visited')){
+    localStorage.setItem('last_visited', new Date());
+    //DAYS SINCE LAST VISIT
     visit_heading.textContent = 'This is your first visit!  Welcome!';
 }
+else{
+    let last_visited = localStorage.getItem('last_visited')
+    let date1 = new Date(last_visited);
+    let date2 = new Date();
+    diff_days = calc_diff_days(date1, date2);
+    localStorage.setItem('last_visited', last_visited);
+    console.log(diff_days)
 
-//Increment by 1 after each visit
-numVisits++
+    visit_heading.textContent = `${diff_days} days`;
+}
 
-//Store new variable
-localStorage.setItem('num_visits', numVisits);
+localStorage.setItem('last_visited', last_visited);

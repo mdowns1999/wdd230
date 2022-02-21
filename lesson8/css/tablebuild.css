@@ -1,0 +1,49 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+
+
+table {
+    margin: 10px auto;
+	border: thin solid black;
+	box-shadow: 0 0 30px grey;
+	border-collapse: collapse;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+tr:first-child th, caption{
+    background-color: #4070A0;
+    font-size:25px;
+}
+
+thead .col_headers{
+    background-color:#8ea8c3 ;
+    color:white;
+}
+
+caption {
+    padding:10px;
+    caption-side: bottom;
+    font-size:.9rem;
+}
+th, td {
+	padding: 7px 15px;
+	border: 1px solid black;
+}
+
+tbody tr:nth-child(even) {
+	background-color: #B8B8B8;
+}
+
+tbody .special_price{
+    background-color:#8ea8c3 ;
+    color:white;
+}
+
+tbody .black_friday{
+    font-style: italic;
+}
+
+td{
+    text-align:center;
+}
+

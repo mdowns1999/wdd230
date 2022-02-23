@@ -34,11 +34,63 @@
             <a href="https://linkedin.com" target="_blank"><img class="linkedin" src='images/In-White-26@2x.png'
                     alt="Linked In Logo"></a></div>
 
-        <section class="date"></section>
+        <span class="date"></span>
     </header>
 
     <main class="join_main">
-        <h1>JOIN PAGE</h1>
+        <div class="join_pic_box">
+            <img class="join_page_pic" src="images/bus_group.jpg" alt="Group picture">
+            <h1>Have a Question?</h1>
+            <p>Reach out to us! We are always happy to answer any questions you may have!</p>
+        </div>
+
+
+        <div class="form_section">
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Contact Form</legend>
+                    <label for="fname">First Name*<input id="fname" name="firstname" required></label>
+
+                    <label for="lname">Last Name*<input id="lname" name="lastname" required></label>
+
+                    <label for="email">Email<input id="email" name="email" type="email"
+                            placeholder="example@gmail.com"></label>
+
+
+                    <label for="phone">Phone Number<input id="phone" type="tel" name="phone"
+                            placeholder="12345555555"></label>
+
+
+                    <label for="bus_name">Business Name*<input id="bus_name" type="text" name="bus_name"
+                            required></label>
+
+                    <label for="title">Position/Title*
+                        <input id="title" name="title" pattern='[- A-Za-z]+' minlength='7' required></label>
+
+
+                    <!--HIDDEN DROP DOWN OPTIONS-->
+                    <label>Member Level
+                        <select name="subject">
+                            <option value="">Please Select</option>
+                            <option value="level1">Level 1</option>
+                            <option value="level2">Level 2</option>
+                            <option value="level3">Level 3</option>
+                        </select>
+                    </label>
+
+                    <!--HIDDEN TEXT AREA-->
+                    <input type="hidden" value="date" value="CurrentDate" name="hidden">
+
+                    <label for="message">Message:
+                        <textarea id="message" name="message"></textarea></label>
+
+                    <!--SUBMIT BUTTON-->
+
+                    <input class='submit' type="submit" value="Send Message">
+                </fieldset>
+            </form>
+        </div>
+
     </main>
     <footer>
         <img class="logo_footer" src="images/chamber_logo_changed.webp" alt="Rexburg Chamber Logo">

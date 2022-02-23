@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Class Example</title>
+</head>
+<body>
+    <form method="get" action="thankyou.html">
+        <label for="fname">FirstName*</label>
+        <input id="fname" name="firstname" required>
+        <label for="phone">Phone Number</label>
+        <input id="phone" type='tel' name="phone">
+
+
+        <label for="password">PASSWORD*</label>
+        <input id="password" name="password" pattern='[- A-Za-z]+' minlength = '8' required>
+
+
+
+        <input type="submit" value="Submit">
+        <input type="hidden" value="date" value="CurrentDate">
+        <label for="message">Give us a message</label>
+        <textarea id="message"></textarea>
+
+        <input type="level" name="memLevel">
+        <datalist id="level" = "level">Level 1</datalist>
+
+        
+
+
+    </form>
+</body>
+</html>

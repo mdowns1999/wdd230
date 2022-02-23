@@ -45,7 +45,7 @@ function show_banner(announcement) {
     announcement.classList.add('announce_style');
 };
 
-if (day === 1 || day === 2) {
+if (day === 1 || day === 3) {
     const announcement = document.querySelector('.announce')
     show_banner(announcement)
 }

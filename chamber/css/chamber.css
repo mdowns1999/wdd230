@@ -332,7 +332,8 @@ footer{
 
 form {
     grid-column: 1/-1;
-    margin:auto;
+    width:75%;
+    margin:0 auto;
 }
 
 form fieldset {
@@ -396,7 +397,7 @@ form label textarea {
     }
 
     .join_page_pic {
-        width:200px;
+        width:300px;
     }
 /*-----------------Thanks Page for the Form---------------*/
 
@@ -532,7 +533,9 @@ form label textarea {
     width:300px;
 }
 
-
+form {
+    width:50%;
+}
 
 .join_page_pic {
     width:350px;

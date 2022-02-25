@@ -41,6 +41,7 @@ header {
     padding:10px;
 }
 
+
 .facebook, .linkedin {
     width:30px;
     padding:20px;
@@ -359,7 +360,7 @@ form label input, form label select, form label textarea{
     font-size:1.0rem;
     border: solid 1px black;
     border-radius:8px;
-    padding:.1rem;
+    padding:.2rem;
     color:#555;
     width:100%;
     max-width:20rem;
@@ -381,7 +382,7 @@ form label textarea {
     padding:15px;
     margin-top:20px;
     border-radius:20px;
-    color:white;
+    color:black;
     background-color: #8ea8c3;
 }
 

@@ -45,7 +45,7 @@ function show_banner(announcement) {
     announcement.classList.add('announce_style');
 };
 
-if (day === 1 || day === 3) {
+if (day === 1 || day === 2) {
     const announcement = document.querySelector('.announce')
     show_banner(announcement)
 }
@@ -116,3 +116,8 @@ else{
 }
 
 localStorage.setItem('last_visited', last_visited);
+
+// DATE FOR HIDDEN INPUT
+document.getElementById('hidden').value = date;
+
+

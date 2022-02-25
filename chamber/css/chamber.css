@@ -122,12 +122,20 @@ main{
 }
 
 .event_box, .hero_box, .spotlight_box,.weather_box, .join_box, .news_box, .contact_box,
-.discover_images, .discover_demographics_box, .discover_statistics_box, .discover_history_box,.discover_visited_box,.thanks_box,.join_pic_box{
+.discover_images, .discover_demographics_box, .discover_statistics_box, .discover_history_box,.discover_visited_box,.thanks_box{
     border: 1px solid grey;
     background-color: #B8B8B8;
     padding:25px;
     text-align: center;
 }
+
+.join_pic_box{
+    border: 1px solid grey;
+    background-color: #B8B8B8;
+    padding:25px;
+    text-align: center;
+}
+
 
 .spotlight_box {
     padding:20px;
@@ -386,6 +394,11 @@ form label textarea {
     background-color: #8ea8c3;
 }
 
+.submit:hover{
+    background-color: white;
+    color:black;
+}
+
        .form_section{
         grid-column: 1/-1;
         grid-row:2/3;
@@ -397,8 +410,16 @@ form label textarea {
         justify-items: center;
     }
 
-    .join_page_pic {
-        width:300px;
+
+    .form_info{
+        list-style: none;
+        display:block;
+        padding:20px;
+    
+    }
+
+    .form_info li{
+        margin-top: 1.5em;
     }
 /*-----------------Thanks Page for the Form---------------*/
 

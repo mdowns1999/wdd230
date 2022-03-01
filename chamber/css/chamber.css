@@ -105,6 +105,7 @@ nav a {
 nav a:hover {
     background-color: #8ea8c3;
     color:black;
+    transition-duration: 0.2s;
 }
 
 .responsive li {
@@ -122,7 +123,7 @@ main{
 }
 
 .event_box, .hero_box, .spotlight_box,.weather_box, .join_box, .news_box, .contact_box,
-.discover_images, .discover_demographics_box, .discover_statistics_box, .discover_history_box,.discover_visited_box,.thanks_box{
+.discover_images, .discover_demographics_box, .discover_statistics_box, .discover_history_box,.discover_visited_box,.thanks_box,.directory_box{
     border: 1px solid grey;
     background-color: #B8B8B8;
     padding:25px;
@@ -429,6 +430,26 @@ form label textarea {
 }
 .thanks_p {
     padding:20px;
+}
+
+/*---------------------------------DIRECTORY PAGE MOBILE CSS --------------------*/
+.directory_box {
+    grid-column: 1/-1;
+    grid-row:1/2;
+}
+
+.button1, .button2{
+    background-color:#8ea8c3; 
+    color: black; 
+    border: 2px solid black;
+    border-radius: 10px;
+    padding:10px;
+}
+
+.button1:hover, .button2:hover{
+    background-color:white; 
+    color: black; 
+    transition-duration: 0.2s;
 }
 
 

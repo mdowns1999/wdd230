@@ -3,6 +3,12 @@
     /* display:none; */
 }
 
+.newstyle2 {
+    background-color: blue;
+    /* display:none; */
+}
+
+
 ul {
     list-style: none;
     display:flex;

@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Ubuntu:wght@300;400&display=swap');
+
+main {
+    background-color:white ;
+}
+
+header,body,footer {
+    max-width: 1500px;
+    margin: 1rem auto;
+    text-align:center;
+    font-family: 'Bree Serif', serif;
+
+}
+
+header, footer{
+    padding:20px;
+}
+
+
+header{
+    color:blue;
+}
+
+body {
+    background-color: rgb(233, 233, 233);
+    box-shadow: 10px 10px 8px 8px #888888;
+    padding:10px;
+}
+
+footer{
+    font-size: 20px;
+}
+
+div {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-gap:5px;
+}
+
+section {
+    border: 2px solid black;
+    padding:10px;
+    background-color:#8ea8c3;
+
+}
+
+section img {
+    width:200px;
+    box-shadow: 2px 2px 2px 2px #888888;
+}
+
+@media screen and (min-width: 800px){
+    div{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    div{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}

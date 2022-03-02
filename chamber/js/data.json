@@ -1,0 +1,87 @@
+[
+    {
+        "name": "Rexburg Floral",
+        "address": "233 1st N",
+        "number": "(208) 233-3333",
+        "website": "floralrexburg.com",
+
+
+    },
+    {
+        "name": "Tony's Hardware",
+        "address": "100 1st E",
+        "number": "(208) 255-5555",
+        "website": "tonyshardware.com"
+
+    },
+    {
+        "name": "Ben's Dinner",
+        "address": "300 1st S",
+        "number": "(208) 333-1333",
+        "website": "bensdinner.com"
+
+    },{
+        "name": "Johns Cleaning",
+        "address": "200 1st E",
+        "number": "(208) 111-2222",
+        "website": "johnscleaning.com"
+
+    },
+    {
+        "name": "Kens Autoshop",
+        "address": "250 2nd E",
+        "number": "(208) 344-6758",
+        "website": "rexburgautobody.com"
+
+    },
+    {
+        "name": "Everyday Grocery",
+        "address": "300 1st E",
+        "number": "(208) 233-3333",
+        "website": "everydaygrocery.com"
+
+    },
+    {
+        "name": "The Paint Shop",
+        "address": "200 3rd E",
+        "number": "(208) 122-3333",
+        "website": "rexpaint.com"
+
+    },
+    {
+        "name": "Idaho Bank",
+        "address": "150 3rd E",
+        "number": "(208) 555-5555",
+        "website": "rexbank.com"
+
+    },
+    {
+        "name": "Cal-Ranch",
+        "address": "250 2nd E",
+        "number": "(208) 222-3333",
+        "website": "cal-ranch.com"
+
+    },
+    {
+        "name": "Clover's Dress Shop",
+        "address": "500 2nd E",
+        "number": "(208) 111-0002",
+        "website": "rexdress.com"
+
+    },
+    {
+        "name": "Tony's Pizzeria",
+        "address": "201 3rd E",
+        "number": "(208) 142-3333",
+        "website": "rexpizza.com"
+
+    },
+    {
+        "name": "Europe Shoe Store",
+        "address": "200 Main st",
+        "number": "(208) 122-5533",
+        "website": "rexshoe.com"
+
+    }
+
+]

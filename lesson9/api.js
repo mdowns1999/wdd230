@@ -1,6 +1,8 @@
 //USING JAVASCRIPT TO BRING IN DATA
 
-const url = 'https://learnwebcode.github.io/json-example/animals-1.json';
+// const url = 'https://learnwebcode.github.io/json-example/animals-1.json';
+
+const url = 'https://github.com/mdowns1999/wdd230/chamber/js/bussiness.json';
 
 // const results = fetch(url);
 
@@ -24,21 +26,3 @@ let result = fetch(url).then((result)=>{
             console.log(data[0].foods.likes[1]);
         });
 
-let test_json = [
-    {
-        "name": "Rexburg Floral",
-        "address": "233 1st N",
-        "number": "(208) 233-3333",
-        "website": "floralrexburg.com"
-
-    },
-    {
-        "name": "Tony's Hardware",
-        "address": "100 1st E",
-        "number": "(208) 255-5555",
-        "website": "tonyshardware.com"
-
-    }
-]
-
-console.log(test_json[1].name)

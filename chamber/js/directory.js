@@ -67,8 +67,18 @@ fetch(requestURL)
     card.setAttribute('class', 'column');
     card.classList.add('column');
 
+    //ADD IMG
+    let img = document.createElement('img');    // Change the textContent property of the h2 element to contain the prophet's full name
+    img.setAttribute('alt', 'Bussiness Card Image');
+    img.setAttribute('src', `./${cards.image}`);
+    img.classList.add('size');
+    // Add/append the section(card) with the h2 element
+    card.appendChild(img);
+    // Add/append the existing HTML div with the cards class with the section(card)
+    document.querySelector('div.cards').appendChild(card);
 
-    let h2 = document.createElement('h2');    // Change the textContent property of the h2 element to contain the prophet's full name
+
+    let h2 = document.createElement('p');    // Change the textContent property of the h2 element to contain the prophet's full name
     h2.textContent = `${cards.name}`;
     // Add/append the section(card) with the h2 element
     card.appendChild(h2);
@@ -100,15 +110,6 @@ fetch(requestURL)
     card.appendChild(web_p);
     // Add/append the existing HTML div with the cards class with the section(card)
     document.querySelector('div.cards').appendChild(card);
-
-          //ADD IMG
-          let img = document.createElement('img');    // Change the textContent property of the h2 element to contain the prophet's full name
-          img.setAttribute('alt', 'Bussiness Flower Image');
-          img.setAttribute('src', cards.image);
-          // Add/append the section(card) with the h2 element
-          card.appendChild(img);
-          // Add/append the existing HTML div with the cards class with the section(card)
-          document.querySelector('div.cards').appendChild(card);
 
   }
 

@@ -4,7 +4,7 @@
         "address": "233 1st N",
         "number": "(208) 233-3333",
         "website": "floralrexburg.com",
-        "image": "images/resized_icons/rsz_1cleaning.png"
+        "image": "images/resized_icons/rsz_1flower.png"
 
 
     },
@@ -13,14 +13,14 @@
         "address": "100 1st E",
         "number": "(208) 255-5555",
         "website": "tonyshardware.com",
-        "image": "images/resized_icons/rsz_1cleaning.png"
+        "image": "images/resized_icons/rsz_hardware.png"
     },
     {
         "name": "Ben's Dinner",
         "address": "300 1st S",
         "number": "(208) 333-1333",
         "website": "bensdinner.com",
-        "image": "images/resized_icons/rsz_1cleaning.png"
+        "image": "images/resized_icons/pizza.png"
 
     },{
         "name": "Johns Cleaning",
@@ -31,11 +31,11 @@
 
     },
     {
-        "name": "Kens Autoshop",
+        "name": "Kens Autobody",
         "address": "250 2nd E",
         "number": "(208) 344-6758",
         "website": "rexburgautobody.com",
-        "image": "images/resized_icons/rsz_1cleaning.png"
+        "image": "images/resized_icons/car.png"
 
     },
     {
@@ -59,7 +59,7 @@
         "address": "150 3rd E",
         "number": "(208) 555-5555",
         "website": "rexbank.com",
-        "image": "images/resized_icons/rsz_1cleaning.png"
+        "image": "images/resized_icons/coins.png"
 
     },
     {
@@ -67,15 +67,15 @@
         "address": "250 2nd E",
         "number": "(208) 222-3333",
         "website": "cal-ranch.com",
-        "image": "images/resized_icons/rsz_1cleaning.png"
+        "image": "images/resized_icons/farm.png"
 
     },
     {
-        "name": "Clover's Dress Shop",
+        "name": "Sunny's Dress Shop",
         "address": "500 2nd E",
         "number": "(208) 111-0002",
         "website": "rexdress.com",
-        "image": "images/resized_icons/rsz_1cleaning.png"
+        "image": "images/resized_icons/rsz_sunny.png"
 
     },
     {
@@ -83,7 +83,7 @@
         "address": "201 3rd E",
         "number": "(208) 142-3333",
         "website": "rexpizza.com",
-        "image":"images/resized_icons/rsz_1cleaning.png"
+        "image":"images/resized_icons/pizza.png"
 
     },
     {

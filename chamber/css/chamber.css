@@ -488,16 +488,9 @@ form label textarea {
     margin-right:50px;
 }
 
-.cards .list{
-    border: 2px solid black;
-    padding:10px;
-    background-color:white;
-}
-
-.cards .list p{
-    display:inline;
-    margin-right:200px;
-
+.cards .column img{
+    width:210px;
+    justify-self: center;
 }
 
 /*List CSS */

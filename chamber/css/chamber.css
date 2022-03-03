@@ -452,6 +452,73 @@ form label textarea {
     transition-duration: 0.2s;
 }
 
+.cards{
+    grid-column: 1/-1;
+    
+}
+
+#column-layout{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-gap:5px;
+}
+
+
+
+.cards .column{
+    border: 2px solid black;
+    padding:10px;
+    background-color:#B8B8B8;
+    text-align:center;
+
+}
+
+.cards .column a:hover{
+    color:white;
+
+
+}
+
+.button1,.button2 {
+    font-size:40px;
+    padding:10px;
+}
+
+.button1 {
+    margin-right:50px;
+}
+
+.cards .list{
+    border: 2px solid black;
+    padding:10px;
+    background-color:white;
+}
+
+.cards .list p{
+    display:inline;
+    margin-right:200px;
+
+}
+
+/*List CSS */
+.table tr td {
+    display: block;
+    border: none;
+    line-height: 3rem;
+    
+  }
+
+.table{
+    text-align:center;
+}
+
+tr:nth-child(even) {
+	background-color: #B8B8B8;
+}
+
+tr:nth-child(odd) {
+	background-color: #8ea8c3;
+}
 
 /*----------------------------------*/
 /*Media Quires*/
@@ -583,6 +650,25 @@ form {
 .join_page_pic {
     width:350px;
 }
+
+/*-----DIRECTORY TABLET VIEW---------------------*/
+
+#column-layout{
+    grid-template-columns: 1fr 1fr;
+}
+
+.table {
+    grid-column: 1/-1;
+    border: thin solid black;
+    border-collapse: collapse;
+        margin: 5px;
+}
+
+.table tr td {
+    display: inline;
+    padding:20px;
+  }
+
 
 }
 
@@ -742,5 +828,14 @@ form {
         padding:20px;
         margin-top: 250px;
     }
+
+    /*---------------------------DIRECTORY PAGE---------------------------*/
+    #column-layout{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+.table tr td {
+    padding:50px;
+  }
 
 }

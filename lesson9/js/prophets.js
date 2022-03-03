@@ -52,3 +52,8 @@ fetch(requestURL)
           document.querySelector('div.cards').appendChild(card);
 
   }
+
+  let cardz = docmuent.querySelectorAll('.cards')
+  docmuent.querySelectorAll('.cards').forEach((item) => {
+      item.remove();
+  })

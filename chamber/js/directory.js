@@ -101,20 +101,16 @@ fetch(requestURL)
     // Add/append the existing HTML div with the cards class with the section(card)
     document.querySelector('div.cards').appendChild(card);
 
-        //   //ADD IMG
-        //   let img = document.createElement('img');    // Change the textContent property of the h2 element to contain the prophet's full name
-        //   img.setAttribute('src', cards.image);
-        //   // Add/append the section(card) with the h2 element
-        //   card.appendChild(img);
-        //   // Add/append the existing HTML div with the cards class with the section(card)
-        //   document.querySelector('div.cards').appendChild(card);
+          //ADD IMG
+          let img = document.createElement('img');    // Change the textContent property of the h2 element to contain the prophet's full name
+          img.setAttribute('alt', 'Bussiness Flower Image');
+          img.setAttribute('src', cards.image);
+          // Add/append the section(card) with the h2 element
+          card.appendChild(img);
+          // Add/append the existing HTML div with the cards class with the section(card)
+          document.querySelector('div.cards').appendChild(card);
 
   }
-
-
-  //TO CLEAR CARDS:  
-//window.innerWidth
-
 
 function displayList(list) {  // Create elements to add to the document
     let list_row = document.createElement('tr');
@@ -129,10 +125,10 @@ function displayList(list) {  // Create elements to add to the document
 
     let td_web = document.createElement('td');
     let web_p = document.createElement('a')
-    web_p.setAttribute('href', '#');
-    let text = web_p.textContent = `${list.website}`;
-    td_web.textContent = `${text}`;
+    web_p.setAttribute('href', list.website);
+    web_p.textContent = `${list.website}`;
 
+    td_web.appendChild(web_p)
     list_row.appendChild(td_name)
     list_row.appendChild(td_address)
     list_row.appendChild(td_number)

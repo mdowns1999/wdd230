@@ -43,7 +43,7 @@
         "address": "300 1st E",
         "number": "(208) 233-3333",
         "website": "everydaygrocery.com",
-        "image": "images/resized_icons/rsz_1cleaning.png"
+        "image": "images/resized_icons/grocery.png"
 
     },
     {
@@ -51,7 +51,7 @@
         "address": "200 3rd E",
         "number": "(208) 122-3333",
         "website": "rexpaint.com",
-        "image": "images/resized_icons/rsz_1cleaning.png"
+        "image": "images/resized_icons/paint.png"
 
     },
     {
@@ -91,7 +91,7 @@
         "address": "200 Main st",
         "number": "(208) 122-5533",
         "website": "rexshoe.com",
-        "image": "images/resized_icons/rsz_1cleaning.png"
+        "image": "images/resized_icons/shoes.png"
 
     }
 

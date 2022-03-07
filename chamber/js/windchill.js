@@ -48,7 +48,7 @@ fetch(apiURL)
 
 let temp = document.querySelector('#current_temp').textContent = ((jsObject.main.temp - 273.15)* 1.8000 + 32.00).toFixed(1);
 
-let wind_speed = document.querySelector('#current_wind').textContent = jsObject.wind.speed;
+let wind_speed = document.querySelector('#current_wind').textContent = (jsObject.wind.speed * 1.6).toFixed(1);
 
     wind_chill = calculate_wind_chill(temp, wind_speed);
     console.log(wind_chill)

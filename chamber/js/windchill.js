@@ -19,14 +19,6 @@ if (temp <= 50 && wind_speed >= 3) {
     return wind_chill
 }}
 
-// wind_chill = calculate_wind_chill(temp, wind_speed);
-// console.log(wind_chill)
-
-// Display Weather to Screen
-
-// document.getElementById('tempature').innerHTML = `${temp} Degrees`
-// document.getElementById('wind_speed').innerHTML = `Wind Speed: ${wind_speed} MPH`
-// document.getElementById('wind_chill').innerHTML = `Temperature with Wind Chill: ${wind_chill} Degrees`
 
 //-----------------------------WEATHER API------------------------------------
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5605242&appid=02d473c5cf694ebadd4f2571d38f204c";
@@ -43,7 +35,6 @@ fetch(apiURL)
     document.querySelector('#weather_icon').setAttribute('src', iconsrc);
     document.querySelector('#weather_icon').setAttribute('alt', description);
     document.querySelector('figcaption').textContent = description;
-    // document.querySelector('#weather_description').textContent= jsObject.weather[0].main;
 
 
 let temp = document.querySelector('#current_temp').textContent = ((jsObject.main.temp - 273.15)* 1.8000 + 32.00).toFixed(1);

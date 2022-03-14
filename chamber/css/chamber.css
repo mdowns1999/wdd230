@@ -613,7 +613,7 @@ tr:nth-child(odd) {
   }
 
   .contact_1 img, .contact_3 img {
-      width:200;
+      width:200px;
   }
 
   .contact_2 img {
@@ -644,10 +644,6 @@ tr:nth-child(odd) {
 @media screen and (min-width: 800px) {
 
     /*-------------HEADER---------------*/
-    /* .logo {
-        grid-column: 1/2;
-        grid-row:1/2;
-    } */
 
     .logo_link {
         grid-row:1/2;
@@ -801,8 +797,6 @@ form {
   }
 
 
-
-
 /*--------------------------------------------Contact PAGE CSS-----------------------------------------------------*/
 
 .contact_form_box {
@@ -820,7 +814,7 @@ form {
 }
 
   .contact_1 img, .contact_3 img {
-      width:300;
+      width:300px;
   }
 
   .contact_2 img {
@@ -839,12 +833,7 @@ form {
     margin-top: 100px;
     width:450px;
 }
-
-
 }
-
-
-
 
 /*----------------------------------*/
 /* Laptop View */
@@ -1026,9 +1015,7 @@ form {
     padding:50px;
   }
 
-
-
-  .contact_business_cards {
+.contact_business_cards {
     grid-template-columns: 1fr 1fr 1fr;
 }
 

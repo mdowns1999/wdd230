@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mike Downs">
+    <meta name="description" content="A Contact Page for Rexburg CHamber of Commerce.">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="shortcut icon" href="images/icon.ico">
+    <link rel="stylesheet" href="css/chamber.css">
+    <title>Rexburg Chamber of Commerce-Contact</title>
+</head>
+
+<body>
+    <h3 class="announce"></h3>
+    <header>
+        <a href='index.html' class="logo_link"><img class="logo" src="images/chamber_logo_changed.webp"
+                alt="Rexburg Chamber Logo"></a>
+
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham" href="#">&#9776;</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+        </nav>
+
+        <div class="social_media_logos"><a href="https://facebook.com" target="_blank"><img class="facebook"
+                    src='images/f_logo_RGB-White_100.png' alt="facebook Logo"></a>
+            <a href="https://linkedin.com" target="_blank"><img class="linkedin" src='images/In-White-26@2x.png'
+                    alt="Linked In Logo"></a></div>
+
+        <span class="date"></span>
+    </header>
+
+    <main id="contact_main">
+        <div class="contact_intro">
+            <h1>Contact Us!</h1>
+            <p>Have any questions about the chamber? Contact us! Fill out the form below! IF you want to get to know one
+                of our CEO's, look at their business card below the form!</p>
+
+        </div>
+
+        <div class="contact_form_box">
+            <h1 class="contact_title">Contact Form</h1>
+
+            <form method="get" action="thankyou.html" class="contact_form">
+                    <label for="fname">First Name* <input id='fname' name='first_name' required></label>
+                    <label for="lname">Last Name* <input id='lname' name='last_name' required></label>
+                    <label for="email">Email* <input id='email' name='email_address'></label>
+                    <label for="message">Message:<textarea id="message" name="message"></textarea></label>
+                    <input class='submit' type="submit" value="Send Message">
+            </form>
+
+            <img src="images/contact_images/rsz_1malte-helmhold-mqmuv-3jaoc-unsplash.jpg" alt="Contact Picture">
+        </div>
+
+        <div class="contact_business_cards">
+
+            <div class="contact_1">
+                <img src="images/contact_images/ceo_one.jpg" alt="CEO Male Picture">
+                <h1>Joe Johnson</h1>
+                <p>(208) 522-2222</p>
+                <p>jimjohnson@chamber.org</p>
+            </div>
+
+            <div class="contact_2">
+                <img src="images/contact_images/ceo_two.jpg" alt="CEO Male Picture 2">
+                <h1>Bill Murrey</h1>
+                <p>(208) 522-2222</p>
+                <p>billmurrey@chamber.org</p>
+            </div>
+
+            <div class="contact_3">
+                <img src="images/contact_images/ceo_three.jpg" alt="CEO Woman Picture">
+                <h1>Sarah Joe</h1>
+                <p>(208) 522-2222</p>
+                <p>sarahjoe@chamber.org</p>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <img class="logo_footer" src="images/chamber_logo_changed.webp" alt="Rexburg Chamber Logo">
+
+        <p class='legel-section'>
+            &copy;<span id="year"></span> Rexburg Chamber | Mike Downs | WDD 230 Project | <span
+                id='current_date'></span>
+
+        </p>
+        <a class="address" href="https://goo.gl/maps/tPYNnkvYH77Nfko79">
+            <p class="map">Rexburg Chamber Address📍</p>
+        </a>
+
+    </footer>
+
+    <script src="js/chamber.js"></script>
+    <script src="js/windchill.js"></script>
+</body>
+
+</html>

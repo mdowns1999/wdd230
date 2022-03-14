@@ -55,7 +55,7 @@ const images = document.querySelectorAll('.picture');
 
 // OPTIONS TO AFFECT IMAGE
 const options = {
-    threshold: [.5]
+    threshold: [.01]
 }
 
 function preloadImage(img) {

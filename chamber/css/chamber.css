@@ -103,7 +103,7 @@ nav a {
 	text-align:center;
 	padding:20px;
 	text-decoration: none;
-	font-size:20px;
+	font-size:23px;
     margin-left: 150px;
 }
 
@@ -398,10 +398,6 @@ footer{
 
 /*--------------------------------------------JOIN PAGE CSS-----------------------------------------------------*/
 
-/* form label, form label textarea,form label select{
-    display:block;  
-} */
-
 form {
     grid-column: 1/-1;
     width:75%;
@@ -685,6 +681,11 @@ tr:nth-child(odd) {
     }
 
     /*-------------MAIN-----------*/
+
+    .logo {
+        width:275px;
+    }
+
     main{
         grid-template-columns: 1fr 1fr;
         grid-gap:5px;
@@ -813,13 +814,11 @@ form {
     grid-template-columns: 1fr 1fr;
 }
 
-  .contact_1 img, .contact_3 img {
+  .contact_1 img, .contact_3 img, .contact_2 img {
       width:300px;
   }
 
-  .contact_2 img {
-      width:250px;
-  }
+
   .contact_form_box form{
       grid-column: 1/3;
       grid-row:2/3;
@@ -844,7 +843,7 @@ form {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
     .logo {
-        width:250px;
+        width:325px;
     }
 
     .logo_link {

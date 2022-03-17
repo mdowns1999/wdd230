@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,23 +12,67 @@
     <link rel="stylesheet" href="css/temple.css">
     <title>Temple Inn and Suites</title>
 </head>
+
 <body>
-    <!-- WIREFRAME: https://wireframe.cc/lkUPxA -->
+    <!-- WIREFRAME HOME: https://wireframe.cc/lkUPxA -->
+    <!-- WIREFRAME Temples: https://wireframe.cc/jwr0UI -->
+    <!-- WIREFRAME Reservations: https://wireframe.cc/d5WRib -->
+
 
     <header>
-        <h1>Header</h1>
+        <div id="top_half_header">
+            <img class='logo' src="images/blank_image.jpg" alt="Temple Inn and Suites Logo" width="200px"
+                height="200px">
+            <p class='hotel_address_info'>-2550 S 200 N, Rexburg, Idaho 83440 -(208) 555-5555 -5 stars</p>
+
+
+            <div id="social_media_logos">
+
+                <a href="https://facebook.com" target="_blank">
+                    <img class="facebook" src='images/home_images/f_logo_RGB-White_100.png' alt="Facebook Logo"></a>
+                <a href="https://twitter.com" target="_blank">
+                    <img class="twitter" src='images/home_images/Twitter social icons - circle - white.png'
+                        alt="Twitter Logo"></a></div>
+
+        </div>
+        <nav class="navigation">
+            <ul id='ul_nav'>
+                <li><a class="ham" href="#">&#9776;</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Temples</a></li>
+                <li><a href="#">Reservations</a></li>
+                <li class="dropdown"><a href="#">Services</a>
+
+                    <ul class="dropdown-content">
+                        <li><a href="#">Missionary</a></li>
+                        <li><a href="#">Reception</a></li>
+                    </ul>
+
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <main>
         <h1>Main</h1>
+        <ul>
+            <li>Item</li>
+        </ul>
     </main>
 
     <footer>
-        <h1>Footer</h1>
+        <img class='logo_footer' src="images/blank_image.jpg" alt="Temple Inn and Suites Logo" width="100px"
+            height="100px">
+        <p class='legel-section'>
+            &copy;<span id="year"></span> Temple Inn and Suites | Mike Downs | WDD 230 Project
+            <a class="address" href="https://goo.gl/maps/tPYNnkvYH77Nfko79">
+                <p>Map</p>
+            </a>
     </footer>
-    
+
 
 
     <script src="js/temple.js"></script>
 </body>
+
 </html>

@@ -1,3 +1,217 @@
+header, main, footer {
+    max-width: 1500px;
+    min-width: 400px;
+    margin:1rem auto;
+}
+/*----------------------------------------HOME PAGE CSS--------------------------------------------------*/
+
 body {
-    background-color: #E7D2CC;
+    background-color: #8ea8c3;
+}
+
+header {
+    background-color: #a8d4ff;
+
+}
+
+#top_half_header {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-gap:5px;
+}
+
+#top_half_header .logo {
+    width:200px;
+    height: 200px;
+    justify-self: center;
+    padding:10px;
+}
+
+.hotel_address_info {
+    text-align: center;
+    align-self:center ;
+    padding:10px;
+}
+
+#social_media_logos{
+    align-self:center ;
+    justify-self: center;
+}
+
+#social_media_logos img:hover{
+    background-color: rgb(226, 225, 225);
+}
+
+
+.facebook, .twitter {
+    width:40px;
+    padding:20px;
+}
+
+
+/*---Nav Bar---*/
+nav {
+    text-align:center;
+    padding:5px;
+    border-top: 1px solid black;
+}
+
+nav #ul_nav {
+    list-style: none;
+    display:flex;
+    flex-direction: column;
+}
+
+nav a {
+    display:block;
+    padding: 15px;
+    text-decoration: none;
+	font-size:20px;
+    text-align:center;
+    margin-right:30px;
+}
+
+nav a:hover {
+    background-color: white;
+}
+
+.navigation li{
+    display:none;
+}
+
+.navigation li:first-child{
+    display:block;
+}
+
+.responsive li{
+    display:block;
+}
+
+.dropdown{
+    display: inline-block;
+    position:relative;
+}
+
+.dropdown-content {
+    display:none;
+    position: absolute;
+    left:100px;
+
+}
+.dropdown:hover .dropdown-content {
+    display:block;
+}
+
+.dropdown-content a{
+    background-color: rgb(187, 185, 185);
+    padding:30px;
+}
+
+
+/*----------*/
+
+main{
+    background-color: aqua;
+}
+
+footer{
+    background-color: #EEEDE7;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-gap:5px;
+    text-align:center;
+}
+
+footer img{
+    justify-self: center;
+    padding:10px;
+}
+
+footer a{
+    padding:10px;
+}
+
+.legel-section {
+    align-self: center;
+}
+
+footer a:hover{
+    background-color: white;
+}
+
+/*----------------------------------------TEMPLE PAGE CSS-------------------------------------------------*/
+
+/*----------------------------------------RESERVATION PAGE CSS--------------------------------------------*/
+
+/*----------------------------------------SERVICE PAGE CSS------------------------------------------------*/
+
+
+
+
+/*Tablet View*/
+@media screen and (min-width: 768px) {
+/*----------------------------------------HOME PAGE CSS--------------------------------------------------*/
+footer {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------TEMPLE PAGE CSS-------------------------------------------------*/
+
+/*----------------------------------------RESERVATION PAGE CSS--------------------------------------------*/
+
+/*----------------------------------------SERVICE PAGE CSS------------------------------------------------*/
+}
+
+
+
+/*Laptop View*/
+@media screen and (min-width: 1250px) {
+/*----------------------------------------HOME PAGE CSS--------------------------------------------------*/
+#top_half_header {
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap:5px;
+}
+
+nav #ul_nav {
+    flex-direction: row;
+}
+
+nav a {
+    margin-right:0px;
+    margin-left: 200px;
+}
+.ham {
+    display:none;
+}
+.navigation li {
+    display:block;
+}
+.dropdown-content {
+    left:-65px;
+}
+
+
+
+
+
+
+
+/*----------------------------------------TEMPLE PAGE CSS-------------------------------------------------*/
+
+/*----------------------------------------RESERVATION PAGE CSS--------------------------------------------*/
+
+/*----------------------------------------SERVICE PAGE CSS------------------------------------------------*/
+
 }

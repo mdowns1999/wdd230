@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Outfit:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Work+Sans&display=swap');
 
 
 header, main, footer, nav {
@@ -63,11 +63,11 @@ main {
 }
 
 h1, h2, h3 {
-	font-family: 'Outfit', sans-serif;
+	font-family: 'Work Sans', sans-serif;
 }
 
 p, ol {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
 .logo {
@@ -97,13 +97,13 @@ h2{
 /* Color Scheme PAGE */
 
 .primary_color{
-	background-color:#4070A0;
+	background-color:#8fa2b8;
 	/* background-color: #23395b; */
 	padding:20px;
 }
 
 .secondary_color{
-	background-color: #B8B8B8;
+	background-color: #E7D2CC;
 	padding:20px;
 }
 
@@ -151,6 +151,19 @@ h2{
 
 ol li {
 	text-align: left;
+}
+
+.moblie_img {
+	display:block;
+	margin:0 auto;
+	padding:20px;
+}
+
+.tablet_img, .laptop_img {
+	width:500px;
+	display:block;
+	margin:0 auto;
+	padding:20px;
 }
 
 @media screen and (min-width: 900px) {

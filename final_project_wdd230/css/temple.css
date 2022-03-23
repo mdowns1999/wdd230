@@ -2,14 +2,15 @@
 
 main{ 
     font-family: 'Poppins', sans-serif;
+    font-size:18px;
 }
 
 header, footer, h1, h2, h3 {
     font-family: 'Work Sans', sans-serif;
 }
 
-header, main, footer {
-    max-width: 1500px;
+header, main, footer, .announce {
+    max-width: 1300px;
     min-width: 400px;
     margin:1rem auto;
 }
@@ -23,6 +24,13 @@ header {
     background-color: #8fa2b8;
     color:white;
     /* #778ca3 */
+}
+
+.announce_style{
+    background-color: #f8b9a7;
+    text-align: center;
+    padding: 10px;
+    margin-bottom:-5px;
 }
 
 #top_half_header {
@@ -122,10 +130,163 @@ nav a:hover {
 
 
 /*----------*/
-
+/*-----Main-----*/
 main{
-    background-color: rgb(229, 226, 226);
+    background-color: white;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-gap:5px;
 }
+
+
+/*Have a general feel with all home page box areas*/
+.box_design{
+    background-color: #E7D2CC;
+    border:1px black solid;
+    padding:30px;
+    text-align: center;
+}
+
+#hero_box{
+    grid-row:1/2;
+    grid-column: 1/-1;
+    padding:0px;
+    position:relative;
+}
+
+#hero_photo {
+    width:100%;
+    height:100%;
+}
+
+.hero_title{
+    position: absolute;
+    /* bottom:240px;
+    left:10px; */
+    bottom:75%;
+    left:5%;
+}
+
+.hero_button {
+    position: absolute;
+    top:75%;
+    right:5%;
+    padding:20px;
+    background-color: #8fa2b8;
+    color:white;
+    text-decoration: none;
+    border:1px black solid;
+    border-radius:10px;
+    font-size: 18px;
+}
+
+#temple_info_box{
+    grid-row:2/3;
+    grid-column: 1/-1;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-gap:5px;
+}
+
+#temple_img{
+    justify-self:center;
+    padding:5px;
+    width:275px;
+}
+
+.about_info, .contact_info{
+    text-align: left;
+}
+
+#amenities_box{
+    grid-row:3/4;
+    grid-column: 1/-1;
+}
+
+.amenities_list{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-gap:5px;
+}
+
+#list_3{
+    display:none;
+}
+
+
+#contact_box{
+    grid-row:4/5;
+    grid-column: 1/-1;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-gap:5px;
+    padding:20px;
+}
+
+.contact_heading {
+    grid-column: 1/-1;
+    margin-bottom: -100px;
+}
+
+.title_headings{
+    grid-column: 1/-1;
+}
+
+.contact_box_content p {
+    padding:10px;
+}
+
+.contact_img{
+    justify-self:center;
+    padding:5px;
+}
+
+.button_style, .submit{
+    margin-top:10px;
+    padding:10px;
+    background-color: #8fa2b8;
+    color:white;
+    text-decoration: none;
+    border:1px black solid;
+    border-radius:10px;
+    font-size: 18px;
+}
+
+.button_style:hover, .hero_button:hover, .submit:hover{
+    background-color:white;
+    color:black;
+}
+
+#weather_box{
+    grid-row:5/6;
+    grid-column: 1/-1;
+
+}
+
+.weather_display{
+    display:grid;
+    grid-template-columns: 1fr;
+}
+
+#weather_icon {
+    justify-self: center;
+    width:150px;
+}
+
+.weather_wind_text, #weather_description {
+    font-size:20px;
+}
+
+#weather_description::first-letter { 
+    text-transform: uppercase;
+}
+
+.weather_symbol{
+    font-size: 40px;
+}
+
+
+/*-----Footer-----*/
 
 footer{
     background-color: #8fa2b8;
@@ -160,9 +321,69 @@ footer .address{
 
 }
 
+#thanks_box{
+    grid-column: 1/-1;
+    padding:200px;
+}
+
+.thanks_p{
+    padding:20px;
+}
+
 /*----------------------------------------TEMPLE PAGE CSS-------------------------------------------------*/
 
 /*----------------------------------------RESERVATION PAGE CSS--------------------------------------------*/
+
+#reservation_box{
+    grid-column: 1/-1;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-gap:10px;
+}
+
+.reservation_heading{
+    grid-column: 1/-1;
+}
+
+.form_img{
+    width:325px;
+    padding:20px;
+}
+
+/*FORM CSS */
+
+form{
+    text-align: left;
+}
+form label{
+    display:block;
+    padding:20px;
+}
+
+form label input,form label select, form label textarea {
+    display:block;
+    border:1px solid black;
+    border-radius:8px;
+    padding:10px;
+    font-size:1.0rem;
+    width:100%;
+    max-width:30rem;
+}
+
+.form_info_content{
+    grid-row:2/3;
+}
+
+form {
+    grid-row:3/4;
+}
+
+form .submit{
+    margin-left:150px;
+}
+
+
+
 
 /*----------------------------------------SERVICE PAGE CSS------------------------------------------------*/
 
@@ -170,9 +391,59 @@ footer .address{
 
 
 /*Tablet View*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 750px) {
 /*----------------------------------------HOME PAGE CSS--------------------------------------------------*/
 
+main{
+    grid-template-columns: 1fr 1fr;
+}
+
+.hero_button{
+    padding:30px;
+}
+
+.hero_title{
+    bottom:85%;
+}
+
+#temple_info_box{
+    grid-row:2/3;
+    grid-column: 1/-1;
+    grid-template-columns: 1fr 1fr;
+}
+
+#temple_img{
+    grid-column: 1/2;
+    grid-row:2/3;
+    width:325px;
+}
+
+.about_info{
+    grid-column: 2/3;
+    grid-row:2/3;
+}
+
+
+
+#amenities_box{
+    grid-row:4/5;
+    grid-column:1/-1;
+}
+
+.amenities_list{
+    grid-template-columns: 1fr 1fr;
+}
+
+#weather_box{
+    grid-row:3/4;
+    grid-column: 1/2;
+}
+
+#contact_box{
+    grid-row:3/4;
+    grid-column: 2/3;
+
+}
 
 
 
@@ -186,6 +457,23 @@ footer .address{
 /*----------------------------------------TEMPLE PAGE CSS-------------------------------------------------*/
 
 /*----------------------------------------RESERVATION PAGE CSS--------------------------------------------*/
+#reservation_box{
+    grid-template-columns: 1fr 1fr;
+}
+
+.form_img{
+    width:400px;
+}
+
+.form_info_content{
+    grid-row:2/3;
+    grid-column: 2/3;
+}
+
+form {
+    grid-row:2/3;
+    grid-column: 1/2;
+}
 
 /*----------------------------------------SERVICE PAGE CSS------------------------------------------------*/
 }
@@ -207,7 +495,7 @@ footer .address{
 }
 
 .logo {
-    width:450px;
+    width:375px;
 }
 
 /* .hotel_address_info{
@@ -226,7 +514,7 @@ nav #ul_nav {
 
 nav a {
     margin-right:0px;
-    margin-left: 200px;
+    margin-left: 150px;
 }
 .ham {
     display:none;
@@ -237,6 +525,55 @@ nav a {
 .dropdown-content {
     left:-65px;
 }
+
+#contact_box{
+    grid-template-columns: 1fr 1fr;
+}
+#contact_box img {
+    grid-column: 1/2;
+    justify-self: center;
+}
+
+.contact_box_content{
+    grid-column: 2/3;
+    align-items: center;
+    margin:auto 0;
+}
+
+#temple_img{
+    width:400px;
+}
+
+
+
+.weather_display {
+    grid-template-columns: 1fr 1fr;
+
+}
+
+#weather_icon{
+    grid-column: 1/2;
+}
+
+.weather_symbol{
+    grid-column: 2/3;
+    align-self: center;
+}
+
+.amenities_list{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#list_3 {
+    display:block;
+}
+
+.list_spacing p{
+    padding:20px;
+}
+
+
+
 
 footer{
     grid-template-columns: 1fr 1fr 1fr;
@@ -250,7 +587,13 @@ footer{
 /*----------------------------------------TEMPLE PAGE CSS-------------------------------------------------*/
 
 /*----------------------------------------RESERVATION PAGE CSS--------------------------------------------*/
+.form_img{
+    width:450px;
+}
 
+form .submit{
+    margin-left:200px;
+}
 /*----------------------------------------SERVICE PAGE CSS------------------------------------------------*/
 
 }

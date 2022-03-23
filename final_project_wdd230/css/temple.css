@@ -239,6 +239,7 @@ main{
 .contact_img{
     justify-self:center;
     padding:5px;
+    width:200px;
 }
 
 .button_style, .submit{
@@ -279,6 +280,10 @@ main{
 
 #weather_description::first-letter { 
     text-transform: uppercase;
+}
+
+#weather_description{
+    grid-column: 1/-1;
 }
 
 .weather_symbol{

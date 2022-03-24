@@ -101,6 +101,19 @@ fetch(requestURL)
             document.querySelector('.temples').appendChild(card);
 
 
+            let list = document.createElement('ul')
+            list.classList.add('temple_list');
+            schedule = [1,2,3,4,5]
+
+
+            for (let i = 0; i < schedule.length; i++) {
+                let item = document.createElement('li')
+                item.textContent = `${schedule[i]}`
+                list.appendChild(item);
+              }
+
+            card.appendChild(list);
+            document.querySelector('.temples').appendChild(card);
         }
 
 

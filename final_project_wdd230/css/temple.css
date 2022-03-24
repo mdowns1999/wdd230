@@ -336,6 +336,34 @@ footer .address{
 }
 
 /*----------------------------------------TEMPLE PAGE CSS-------------------------------------------------*/
+#temple_about{
+    grid-column: 1/-1;
+    grid-row:1/2;
+    }
+
+.temples{
+    grid-column: 1/-1;
+}
+
+
+.temple_img_size{
+    width:400px;
+}
+
+.temple_card{
+    background-color: #E7D2CC;
+    border:1px black solid;
+    padding:30px;
+    text-align: center;
+}
+
+.temple_card p {
+    padding:5px;
+}
+
+#button1, #button2,#button3,#button4{
+    margin-left: 10px;
+}
 
 /*----------------------------------------RESERVATION PAGE CSS--------------------------------------------*/
 
@@ -460,6 +488,15 @@ main{
 
 
 /*----------------------------------------TEMPLE PAGE CSS-------------------------------------------------*/
+.temple_img_size{
+    width:500px;
+}
+
+.temple_img_size:hover {
+    box-shadow: 0 0 10px #333;
+    opacity: 1;
+  }
+
 
 /*----------------------------------------RESERVATION PAGE CSS--------------------------------------------*/
 #reservation_box{
@@ -590,7 +627,9 @@ footer{
 
 
 /*----------------------------------------TEMPLE PAGE CSS-------------------------------------------------*/
-
+.temple_img_size{
+    width:600px;
+}
 /*----------------------------------------RESERVATION PAGE CSS--------------------------------------------*/
 .form_img{
     width:450px;

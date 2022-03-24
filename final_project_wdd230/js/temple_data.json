@@ -3,7 +3,8 @@
         "name": "Provo City Center Temple",
         "address": "50 South University Ave Provo UT 84601 United States",
         "number": "801-343-2700",
-        "image": "images/temple_images/provo_city_center_temple_exterior_1.jpg"
+        "image": "images/temple_images/provo_city_center_temple_exterior_1.jpg",
+        "schedule": "https://www.churchofjesuschrist.org/temples/schedule/appointment?lang=eng"
         
 
     },
@@ -11,20 +12,23 @@
         "name": "Provo City Temple",
         "address": "2200 Temple Hill Dr Provo UT 84604-1775 United States",
         "number": "801-375-5775",
-        "image": "images/temple_images/provo_temple.jpg"
+        "image": "images/temple_images/provo_temple.jpg",
+        "schedule": "https://www.churchofjesuschrist.org/temples/schedule/appointment?lang=eng"
     },
     {
         "name": "Salt Lake City Temple",
         "address": "50 W North Temple St Salt Lake City UT 84150-9709 United States",
         "number": "801-240-2640",
-        "image": "images/temple_images/salt_lake_temple.jpg"
+        "image": "images/temple_images/salt_lake_temple.jpg",
+        "schedule": "https://www.churchofjesuschrist.org/temples/schedule/appointment?lang=eng"
 
     },
     {
         "name": "Payson Temple",
         "address": "1494 S 930 W Payson UT 84651 United States ",
         "number": "801-754-4949",
-        "image": "images/temple_images/payson_utah_temple1"
+        "image": "images/temple_images/payson_utah_temple1.jpg",
+        "schedule": "https://www.churchofjesuschrist.org/temples/schedule/appointment?lang=eng"
     }
 ]
     }

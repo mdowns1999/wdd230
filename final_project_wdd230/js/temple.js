@@ -14,7 +14,7 @@ document.querySelector('#year').textContent = year;
 
 // FETCH JSON FILE FOR DIRECTORY PAGE
 
-const requestURL = 'https://mdowns1999.github.io/wdd230/chamber/js/data.json';
+const requestURL = 'https://mdowns1999.github.io/wdd230/final_project_wdd230/js/temple_data.json';
 
 fetch(requestURL)
     .then(function(response){
@@ -25,37 +25,88 @@ fetch(requestURL)
 
         const data = jsonObject['data'];
 
-        data.forEach(displayTempleCards);
+        displayTempleCards(data[0])
+
+
+        salt_button = document.querySelector('#button1');
+        payson_button = document.querySelector('#button2');
+        center_button = document.querySelector('#button3');
+        provo_button = document.querySelector('#button4');
+
+        salt_button.addEventListener('click',  add_salt_lake)
+        payson_button.addEventListener('click',  add_payson_temple)
+        center_button.addEventListener('click',  add_provo_center_temple)
+        provo_button.addEventListener('click',  add_provo_temple)
+
+        function add_salt_lake(){
+            removeTemples()
+            displayTempleCards(data[2])
+        };
+
+        function add_payson_temple(){
+            removeTemples()
+            displayTempleCards(data[3])
+        };
+
+        function add_provo_center_temple(){
+            removeTemples()
+            displayTempleCards(data[0])
+        };
+
+        function add_provo_temple(){
+            removeTemples()
+            displayTempleCards(data[1])
+        };
+
 
 
         function displayTempleCards(temple){
             let card = document.createElement('section');
+            card.setAttribute('class', 'temple_card');
+            card.classList.add('temple_card');
 
+            //ADD TEMPLE TITLE
+            let name = document.createElement('h1');
+            name.textContent = `${temple.name}`
+            card.appendChild(name);
+            document.querySelector('.temples').appendChild(card);
 
             //CREATE TEMPLE IMAGE
             let temple_img = document.createElement('img');
             temple_img.setAttribute('alt', 'Temple Image');
             temple_img.setAttribute('src', temple.image);
+            temple_img.classList.add('temple_img_size');
             card.appendChild(temple_img);
             document.querySelector('.temples').appendChild(card);
 
+            //CREATE Address
             let address = document.createElement('p');
-            address.textContent = `${temple.info[0]}`
+            address.textContent = `${temple.address}`
             card.appendChild(address);
             document.querySelector('.temples').appendChild(card);
 
+            //CREATE Phone Number
             let phone = document.createElement('p');
-            address.textContent = `${temple.info[1]}`
+            address.textContent = `${temple.number}`
             card.appendChild(phone);
             document.querySelector('.temples').appendChild(card);
 
-            let email = document.createElement('p');
-            address.textContent = `${temple.info[0]}`
-            card.appendChild(email);
+            //CREATE SCHEDULE BUTTON
+            let schedule_link = document.createElement('a')
+            schedule_link.textContent = `Click Here to Schedule an Appointment`
+            schedule_link.setAttribute('href', `https://www.churchofjesuschrist.org/temples/schedule/appointment?lang=eng`)
+            schedule_link.setAttribute('target', "_blank")
+            schedule_link.classList.add('button_style')
+            card.appendChild(schedule_link);
             document.querySelector('.temples').appendChild(card);
+
 
         }
 
+
+        function removeTemples() {
+            document.querySelector('.temple_card').remove();
+        }
 
         //address, telephone, email, services, history, ordinance schedule, session schedule, temple closure schedule
     })

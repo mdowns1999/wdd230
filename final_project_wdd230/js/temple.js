@@ -86,10 +86,39 @@ fetch(requestURL)
             document.querySelector('.temples').appendChild(card);
 
             //CREATE Phone Number
+            // let phone_heading = document.createElement('h2');
+            // address.textContent = `${temple.number}`
+            // card.appendChild(phone);
+
+
             let phone = document.createElement('p');
-            address.textContent = `${temple.number}`
+            phone.textContent = `Phone Number:    ${temple.number}`
             card.appendChild(phone);
             document.querySelector('.temples').appendChild(card);
+
+
+
+
+            let schedule_heading = document.createElement('h3');
+            schedule_heading.textContent = `Important Dates`
+            card.appendChild(schedule_heading);
+            document.querySelector('.temples').appendChild(card);
+
+            let list = document.createElement('ul')
+            list.classList.add('temple_list');
+            schedule = jsonObject.schedule
+            console.log(schedule)
+            for (let i = 0; i < schedule.length; i++) {
+                let item = document.createElement('li')
+                item.textContent = `${schedule[i]}`
+                list.appendChild(item);
+              }
+
+            card.appendChild(list);
+            document.querySelector('.temples').appendChild(card);
+
+
+
 
             //CREATE SCHEDULE BUTTON
             let schedule_link = document.createElement('a')
@@ -100,20 +129,6 @@ fetch(requestURL)
             card.appendChild(schedule_link);
             document.querySelector('.temples').appendChild(card);
 
-
-            let list = document.createElement('ul')
-            list.classList.add('temple_list');
-            schedule = [1,2,3,4,5]
-
-
-            for (let i = 0; i < schedule.length; i++) {
-                let item = document.createElement('li')
-                item.textContent = `${schedule[i]}`
-                list.appendChild(item);
-              }
-
-            card.appendChild(list);
-            document.querySelector('.temples').appendChild(card);
         }
 
 

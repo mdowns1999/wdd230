@@ -100,13 +100,14 @@ fetch(requestURL)
 
 
             let schedule_heading = document.createElement('h3');
-            schedule_heading.textContent = `Important Dates`
+            schedule_heading.textContent = `Closure Dates`
             card.appendChild(schedule_heading);
             document.querySelector('.temples').appendChild(card);
 
             let list = document.createElement('ul')
             list.classList.add('temple_list');
-            schedule = jsonObject.schedule
+            // schedule = jsonObject.schedule
+            schedule = ['1','2','3']
             console.log(schedule)
             for (let i = 0; i < schedule.length; i++) {
                 let item = document.createElement('li')
@@ -122,7 +123,7 @@ fetch(requestURL)
 
             //CREATE SCHEDULE BUTTON
             let schedule_link = document.createElement('a')
-            schedule_link.textContent = `Click Here to Schedule an Appointment`
+            schedule_link.textContent = `Click Here to See Avaliable Appointment Times`
             schedule_link.setAttribute('href', `https://www.churchofjesuschrist.org/temples/schedule/appointment?lang=eng`)
             schedule_link.setAttribute('target', "_blank")
             schedule_link.classList.add('button_style')

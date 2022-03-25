@@ -85,10 +85,6 @@ fetch(requestURL)
             card.appendChild(address);
             document.querySelector('.temples').appendChild(card);
 
-            //CREATE Phone Number
-            // let phone_heading = document.createElement('h2');
-            // address.textContent = `${temple.number}`
-            // card.appendChild(phone);
 
 
             let phone = document.createElement('p');
@@ -106,12 +102,11 @@ fetch(requestURL)
 
             let list = document.createElement('ul')
             list.classList.add('temple_list');
-            // schedule = jsonObject.schedule
-            schedule = ['1','2','3']
-            console.log(schedule)
-            for (let i = 0; i < schedule.length; i++) {
+            let closures = temple.schedule
+            console.log(closures[0])
+            for (let i = 0; i < closures.length; i++) {
                 let item = document.createElement('li')
-                item.textContent = `${schedule[i]}`
+                item.textContent = `${closures[i]}`
                 list.appendChild(item);
               }
 

@@ -4,7 +4,7 @@
         "address": "50 South University Ave Provo UT 84601 United States",
         "number": "801-343-2700",
         "image": "images/temple_images/provo_city_center_temple_exterior_1.jpg",
-        "schedule": "['Saturday, 2 April 2022', 'Monday, 20 June 2022 - Monday, 4 July 2022', 'Saturday, 1 October 2022','Wednesday, 23 November 2022 (Limited Operations)','Thursday, 24 November 2022','Monday, 28 November 2022 - Monday, 12 December 2022','Saturday, 24 December 2022','Saturday, 31 December 2022']"
+        "schedule": ["Saturday, 2 April 2022", "Monday, 20 June 2022 - Monday, 4 July 2022", "Saturday, 1 October 2022","Wednesday, 23 November 2022 (Limited Operations)","Thursday, 24 November 2022","Monday, 28 November 2022 - Monday, 12 December 2022","Saturday, 24 December 2022","Saturday, 31 December 2022"]
         
 
     },
@@ -13,14 +13,14 @@
         "address": "2200 Temple Hill Dr Provo UT 84604-1775 United States",
         "number": "801-375-5775",
         "image": "images/temple_images/provo_temple.jpg",
-        "schedule": "['Saturday, 2 April 2022', 'Monday, 30 May 2022', 'Monday, 4 July 2022 - Monday, 18 July 2022', 'Monday, 25 July 2022', 'Monday, 5 September 2022', 'Saturday, 1 October 2022', 'Wednesday, 23 November 2022 (Limited Operations)', 'Thursday, 24 November 2022', 'Monday, 19 December 2022 - Monday, 2 January 2023']"
+        "schedule": ["Saturday, 2 April 2022", "Monday, 30 May 2022", "Monday, 4 July 2022 - Monday, 18 July 2022", "Monday, 25 July 2022", "Monday, 5 September 2022", "Saturday, 1 October 2022", "Wednesday, 23 November 2022 (Limited Operations)", "Thursday, 24 November 2022", "Monday, 19 December 2022 - Monday, 2 January 2023"]
     },
     {
         "name": "Salt Lake City Temple",
         "address": "50 W North Temple St Salt Lake City UT 84150-9709 United States",
         "number": "801-240-2640",
         "image": "images/temple_images/salt_lake_temple.jpg",
-        "schedule": "['Temple will be closed until 2024.  No appointments are avaiable.']"
+        "schedule": ["Temple will be closed until 2024.  No appointments are avaiable."]
 
     },
     {
@@ -28,7 +28,7 @@
         "address": "1494 S 930 W Payson UT 84651 United States ",
         "number": "801-754-4949",
         "image": "images/temple_images/payson_utah_temple1.jpg",
-        "schedule": "['Saturday, 2 April 2022', 'Monday, 20 June 2022 - Monday, 4 July 2022', 'Saturday, 1 October 2022','Wednesday, 23 November 2022 (Limited Operations)','Thursday, 24 November 2022','Monday, 28 November 2022 - Monday, 12 December 2022','Saturday, 24 December 2022','Saturday, 31 December 2022']"
+        "schedule": ["Saturday, 2 April 2022", "Monday, 20 June 2022 - Monday, 4 July 2022", "Saturday, 1 October 2022","Wednesday, 23 November 2022 (Limited Operations)","Thursday, 24 November 2022","Monday, 28 November 2022 - Monday, 12 December 2022","Saturday, 24 December 2022","Saturday, 31 December 2022"]
     }
 ]
     }

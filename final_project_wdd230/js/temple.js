@@ -118,7 +118,7 @@ fetch(requestURL)
 
             //CREATE SCHEDULE BUTTON
             let schedule_link = document.createElement('a')
-            schedule_link.textContent = `Click Here to See Avaliable Appointments`
+            schedule_link.textContent = `See Avaliable Appointments`
             schedule_link.setAttribute('href', `https://www.churchofjesuschrist.org/temples/schedule/appointment?lang=eng`)
             schedule_link.setAttribute('target', "_blank")
             schedule_link.classList.add('button_style')

@@ -101,38 +101,8 @@ fetch(requestURL)
 
         data = jsonObject['data'];
 
-        displayTempleCards(data[0]);
+        displayTempleCards(data[1]);
 
-
-        // salt_button = document.querySelector('#button1');
-        // payson_button = document.querySelector('#button2');
-        // center_button = document.querySelector('#button3');
-        // provo_button = document.querySelector('#button4');
-
-        // salt_button.addEventListener('click',  add_salt_lake)
-        // payson_button.addEventListener('click',  add_payson_temple)
-        // center_button.addEventListener('click',  add_provo_center_temple)
-        // provo_button.addEventListener('click',  add_provo_temple)
-
-        // function add_salt_lake(){
-        //     removeTemples()
-        //     displayTempleCards(data[2])
-        // };
-
-        // function add_payson_temple(){
-        //     removeTemples()
-        //     displayTempleCards(data[3])
-        // };
-
-        // function add_provo_center_temple(){
-        //     removeTemples()
-        //     displayTempleCards(data[0])
-        // };
-
-        // function add_provo_temple(){
-        //     removeTemples()
-        //     displayTempleCards(data[1])
-        // };
-
-        //address, telephone, email, services, history, ordinance schedule, session schedule, temple closure schedule
     })
+
+
